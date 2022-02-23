@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.667" height="15" viewBox="0 0 11.667 15">
+  <g id="Page-1" transform="translate(-6 -3)">
+    <g id="icon-27-trash-can" transform="translate(6 3)">
+      <path id="trash-can" d="M15.444,5.222H14.333V4.114A1.112,1.112,0,0,0,13.224,3H10.443a1.11,1.11,0,0,0-1.11,1.114V5.222H6v.556H7.111V16.33A1.665,1.665,0,0,0,8.778,18h6.111a1.665,1.665,0,0,0,1.667-1.67V5.778h1.111V5.222ZM9.333,6.889v9.444h.556V6.889Zm2.222,0v9.444h.556V6.889Zm2.222,0v9.444h.556V6.889ZM10.446,3.556a.554.554,0,0,0-.557.555V5.222h3.889V4.111a.552.552,0,0,0-.557-.555Z" transform="translate(-6 -3)" fill="#ff2019" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
