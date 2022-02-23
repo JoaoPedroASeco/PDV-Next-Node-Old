@@ -1,0 +1,3004 @@
+@import "./variables.less";
+@import "./colors.less";
+
+/* COLORS */
+  @primary-color: #0339A6;
+  @secondary-color: #7693CF;
+  @primary-gray: #CBCBCB;
+  @secondary-gray: #757575;
+  @delete-color: #FF2019;
+  @warn-color: #F2AE31;
+  @white-color: white;
+
+  * {
+    font-family: Graphik;
+  }
+
+  .sidebar-container.menu-closed {
+    .vurox-vertical-nav {
+      height: 91vh;
+    }
+    .menu-open.vurox-vertical-nav {
+      height: 91vh;
+    }
+    .menu-closed.vurox-vertical-nav {
+      height: 91vh;
+    }
+  }
+
+  .custom_container_100 {
+    * {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    height: 83vh;
+    margin: 10px 7.5px 10px 15px;
+  }
+
+  .custom_container_100_pdv {
+    * {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    height: 85vh;
+    margin: 10px 7.5px 10px 15px;
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+
+    form {
+      .btn_BuscaGeralProd {
+        display: none;
+      }
+    }
+  }
+
+  .custom_container_50 {
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: Graphik
+    }
+
+    height: 83vh;
+    margin: 10px 7.5px 10px 15px;
+  }
+
+  .ant-row.ant-form-item {
+    div {
+      .btn_crud {
+        display: flex;
+        height: 49px;
+        background: @primary-color;
+        color: @white-color;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        border: none; 
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+      }
+
+      .container_select_form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .select_form {
+        display: flex;
+        width: 240px;
+        height: 40px;
+        border: none;
+        border: 1px solid @primary-color;
+        font-size: 0.95rem;
+        color: @primary-color;
+      }
+
+      .select_form_2 {
+        display: flex;
+        width: 100%;
+        height: 40px;
+        border: none;
+        border: 1px solid @primary-color;
+        font-size: 0.95rem;
+        color: @primary-color;
+      }
+
+      .padding-40-65 {
+        padding: 40px 65px;
+      }
+
+      .m-b-20 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .btn_geral {
+    display: flex;
+    height: 49px;
+    background: @primary-color;
+    color: @white-color;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    border: none; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .select_form_3 {
+    display: flex;
+    width: 100%;
+    height: 49px;
+    border: none;
+    border: 1px solid @primary-color;
+    font-size: 0.95rem;
+    color: @primary-color;
+  }
+
+  .input_form_meio {
+    display: flex;
+    width: 240px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid @primary-color;
+    font-size: 0.95rem;
+    color: @secondary-gray;
+    box-shadow: none;
+    outline: none;
+
+    &::placeholder {
+      color: @secondary-gray;
+      font-weight: normal;
+    }
+  }
+
+  .input_form_full {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid @primary-color;
+    font-size: 0.95rem;
+    color: @secondary-gray;
+    box-shadow: none;
+    outline: none;
+
+    &::placeholder {
+      color: @secondary-gray;
+      font-weight: 600;
+    }
+  }
+
+  .input_pdv {
+    display: flex;
+    width: 100%;
+    height: 49px;
+    padding-left: 20px;
+    border: none;
+    border-bottom: 1px solid @primary-color;
+    font-size: 0.95rem;
+    color: @secondary-gray;
+    box-shadow: none;
+    outline: none;
+
+    &::placeholder {
+      color: @primary-gray;
+      font-weight: 600;
+    }
+  }
+
+  .head_table {
+    display: flex;
+    height: 49px;
+    align-items: center;
+    background: @primary-color;
+    color: @white-color;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding-left: 20px;
+    list-style: none;
+    margin: 20px 0;
+  }
+
+  .h2_title {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .h4 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .div_meio_a_meio {
+    display: flex; 
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .ant-form-item-control-input-content {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  .list_geral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: @secondary-gray;
+    font-weight: 600;
+    font-size: 0.95rem;
+    list-style: none;
+
+    li {
+      display: flex;
+      width: 100%;
+      padding: 10px 0;
+      font-size: 0.95rem;
+      padding-left: 20px;
+
+      &:hover {
+        color: white;
+        background: @secondary-color;
+      }
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: none;
+        width: 35px;
+        
+        img { 
+          width: 14.5px;
+        }
+      }
+    }
+  }
+
+  .footer_list {
+    * {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    display: flex;
+    width: 100%;
+    font-size: 0.875rem;
+    color: @secondary-gray;
+
+    li {
+      margin-right: 20px;
+    }
+  }
+
+  .swal2-confirm.swal2-styled.swal2-default-outline,
+  .swal2-cancel.swal2-styled.swal2-default-outline,
+  .swal2-cancel.btn.btn-danger,
+  .swal2-confirm.btn.btn-success {
+    display: flex;
+    height: 49px;
+    background: @primary-color;
+    color: @white-color;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    border: none; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 120px;
+  }
+  .swal2-cancel.btn.btn-danger,
+  .swal2-confirm.btn.btn-success {
+    margin: 0 5px 0 5px
+  }
+
+/* LOGIN - PAGE */
+  .container_login {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: @white-color;
+
+    .fixed_logo {
+      display: flex;
+      position: absolute;
+      width: 184.27px;
+      height: 44.39px;
+      top: 30px;
+      left: 40px;
+    }
+
+    .fixed_img {
+      display: flex;
+      position: absolute;
+      width: 453px;
+      height: 491.85px;
+      bottom: 60px;
+      left: 190px;
+    }
+
+    .form_login {
+      display: flex;
+      position: absolute;
+      background: @white-color;
+      flex-direction: column;
+      width: 448px;
+      height: 523px;
+      right: 140px;
+      bottom: 51px;
+      padding: 85px 65px;
+      border-radius: 10px;
+      box-shadow: 5px 0px  rgba(100, 95, 95, 0.16);
+      justify-content: center;
+      align-items: center;
+      font-family: Graphik;
+
+      div, h1 {
+        padding: 0;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 21px;
+        font-family: Graphik;
+        font-weight: semi-bold;
+        margin-bottom: 40px;
+      }
+
+      .input_form_full {
+        margin-bottom: 20px;
+        height: 49px;
+      }
+
+      .form_login_btn {
+        height: 49px;
+        background: @primary-color;
+        border: none;
+        border-radius: 3px;
+        width: 320px;
+        font-weight: 13rem;
+        text-transform: uppercase;
+        color: @white-color;
+        margin-bottom: 20px;
+
+        &:hover {
+          background: @white-color;
+          border: 1px solid @primary-color;
+          color: @primary-color;
+          font-weight: 600;
+        }
+      }
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 0.875rem;
+
+      button {
+        border: none;
+        background: none;
+        outline: none;
+        color: @primary-color;
+        font-weight: 600;
+      
+        &:hover {
+          color: @secondary-color;
+        }
+      }
+    }
+
+    .form_login.hide {
+      display: none;
+    }
+  }
+
+  .container_form_configs {
+    padding: 40px 65px;
+    display: flex;
+    width: 100%;
+
+    .left_side_configs {
+      display: flex;
+      width: 48%;
+      flex-direction: column;
+      align-items: center;
+
+      .form_configs {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+  
+        h2 {
+          margin-bottom: 40px;
+        }
+  
+        input {
+          margin-bottom: 20px;
+        }
+  
+        label {
+          width: 100%;
+        }
+      }
+    
+      .submit_form_configs {
+        display: flex;
+        flex-direction: row;
+
+        span {
+          margin: 0 2.5px
+        }
+
+        .btn_geral {
+          width: 120px;
+
+          &:hover {
+            background: @white-color;
+            border: 1px solid @primary-color;
+            color: @primary-color;
+            font-weight: 600;
+          }
+        }
+
+        .btn_geral.disabled {
+          background: @secondary-gray;
+
+          &:hover {
+            background: @secondary-gray;
+            color: white;
+            border: none;
+            font-weight: normal;
+          }
+        }
+
+      }
+    }
+  }
+
+
+/* HOME - PAGE  */
+  .sticky-top {
+    div {
+      .vurox-light-version.vurox-admin-template {
+        .vurox-admin-header {
+          background: @primary-color;
+        }
+        i {
+          color: white;
+        }
+      }
+
+      .rigth_side_header {
+        align-items: center;
+
+        .log_out_header {
+          * {
+            padding: 0;
+            margin: 0;
+          }
+
+          button {
+            display: flex;
+            height: 30px;
+            width: 30px;
+            padding-top: 6px;
+            background: none;
+            border: none;
+            justify-content: center;
+            align-items: center;
+            box-shadow: none;
+            outline: none;
+          }
+        }
+
+      }
+    }
+  }
+
+/* PDV */
+  .paineldeprodutos_pdv{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    height: 100%;
+    background: @white-color;
+
+    .list_btn_grupo {
+      display: flex;
+      flex-direction: column;
+      height: 485.25px;
+      overflow: auto;
+
+      .botao_grupo {
+        width: 100%;
+        min-height: 118px;
+        border: none;
+        background: @white-color;
+        box-shadow: none;
+        color: @primary-color;
+        font-weight: 600;
+        font-size: 1.1rem;
+
+        &:hover {
+          background: @primary-color;
+          color: @white-color;
+        }
+      }
+    }
+
+    .list_btn_grupo.hide {
+      display: none;
+    }
+
+    .list_btn_produtos.hide {
+      display: none;
+    }
+
+    .list_btn_produtos {
+      display: flex;
+      flex-direction: column;
+      background: @white-color;
+      height: 100%;
+
+      form {
+        div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px 20px 0px 20px;
+
+          h2 {
+            font-size: 1.75rem;
+            color: @secondary-gray;
+            margin: 0;
+            padding: 0;
+          }
+
+          #hide_list_btn_produtos { 
+            border: none;
+            background: none;
+          }
+        }
+      }
+      
+      ul {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        max-height: 385px;
+        overflow: auto;
+      }
+
+      #busca_produtos2 {
+        display: flex;
+        width: 100%;
+        height: 55px;
+        padding: 0;
+        margin: 0;
+        padding-left: 20px;
+
+        &::placeholder {
+          color: @primary-gray;
+          font-weight: 600;
+        }
+      }
+
+      .btn_BuscaGeralProd {
+        display: none;
+      }
+
+      .botao_produto {
+        display: flex;
+        width: 100%;
+        height: 105px;
+        align-items: center;
+        padding: 0px 20px;
+        background: white;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          height: 64px;
+          text-align: start;
+          justify-content: center;
+
+          h5 {
+            font-size: 0.875rem;
+            color: @primary-gray;
+            font-weight: normal;
+            margin: 0;
+          }
+
+          span { 
+            padding: 10px 0;
+            font-size: 1rem;
+            font-weight: normal;
+          }
+
+        }
+
+        .baixo_estoque {
+          display: flex;
+          width: 7px;
+          height: 7px;
+          content: "";
+          background: @warn-color;
+          border-radius: 15px;
+        }
+
+        .sem_estoque {
+          display: flex;
+          width: 7px;
+          height: 7px;
+          content: "";
+          background: @delete-color;
+          border-radius: 15px;
+
+        }
+      }
+    }
+  }
+
+  .container_painel_operacional_pdv {
+    display: flex;
+    flex-direction: column;
+    width: 61.5%;
+    height: 100%;
+    background: @white-color;
+    position: relative;
+
+    .painel_operacional {
+      height: 100%;
+
+      *{
+        padding: 0;
+        margin: 0;
+      }
+
+      .header_caixaoperacional {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        form {
+          #codigo_mesa {
+            display: flex;
+            width: 100%;
+            height: 49px;
+            padding-left: 20px;
+            border: none;
+            border-bottom: 1px solid @primary-color;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+    
+            &:focus {
+              outline: none;
+            }
+    
+            &::placeholder {
+              font-size: 1rem;
+              font-weight: 600;
+            }
+          }
+          .btn_add_mesa {
+            display: none;
+          }
+        }
+
+        ul {
+
+          .mesa_btn {
+            height: 49px;
+            width: 129px;
+            background: @white-color;
+            color: @primary-color;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            
+            &:hover {
+              background: @primary-color;
+              color: @white-color;
+            }
+          }
+
+          #mesa_1 {
+            height: 49px;
+            width: 129px;
+            background: @primary-color;
+            color: @white-color;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            outline: none;
+            box-shadow: none;
+
+            &:hover {
+              background: @white-color;
+              color: @primary-color;
+            }
+          }
+        }
+      }
+
+      .body_caixaoperacional {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 82%;
+
+        h5 {
+          padding: 20px 0 47px 54px;
+          font-size: 1.75rem;
+          color: @secondary-gray;
+          font-weight: 600;
+
+          span { 
+            margin-left: 5px;
+            text-transform: uppercase;
+          }
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          list-style: none;
+          width: 100%;
+          font-size: 1.125rem;
+          max-height: 70%;
+          min-height: 70%;
+          overflow: auto;
+
+          li {
+            display: flex;
+            width: 100%;
+            padding: 0 54px;
+            align-items: center;
+            padding-bottom: 14px;
+
+            .consumo_codigo {
+              min-width: 70px;
+              font-weight: 600;
+              color: @primary-color;
+            }
+
+            .consumo_nome {
+              min-width: 520px;
+              justify-self: start;
+            }
+
+            .consumo_preco {
+              min-width: 100px;
+              font-weight: 600;
+            }
+
+            .consumo_delete {
+              border: none;
+              background: none;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+
+      .footer_caixaoperacional {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+
+        ul{ 
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+
+          button {
+            height: 49px;
+            width: 109px;
+            display: flex;
+            background: @white-color;
+            color: @primary-color;
+            font-weight: 600;
+            border: none;
+            box-shadow: none;
+            outline: none;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+              background: @primary-color;
+              color: @white-color;
+            }
+          }
+
+          #consumo_pgtparc {
+            display: flex;
+            height: 49px;
+            padding-left: 20px;
+            border: none;
+            border-bottom: 1px solid @primary-color;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+    
+            &:focus {
+              outline: none;
+            }
+    
+            &::placeholder {
+              font-size: 1rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+    .painel_carteira.hide {
+      display: none;
+    }
+
+    .painel_carteira {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 129.5%;
+      height: 100%;
+      background: @white-color;
+      padding: 56px;
+
+      .header_carteira {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        div {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+          }
+
+          button {
+            border: none;
+            background: none;
+          }
+        }
+
+        form {
+          margin-bottom: 20px;
+          display: flex;
+          flex-direction: row;
+          #busca_cliente {
+            display: flex;
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-bottom: 1px solid @primary-color;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+    
+            &:focus {
+              outline: none;
+            }
+    
+            &::placeholder {
+              font-size: 1rem;
+              font-weight: 600;
+            }
+          }
+    
+          .busca_cliente_btn {
+            border: none;
+            background: none;
+            border-bottom: 1px solid @primary-color;
+          }
+        }
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          height: 49px;
+          background: @primary-color;
+          align-items: center;
+          list-style: none;
+          padding-left: 20px;
+          color: @white-color;
+          font-size: 0.94rem;
+          font-weight: 600;
+
+          .carteira_nome {
+            width: 329px;
+          }
+
+          .carteira_funcao {
+            width: 100px;
+          }
+
+          .carteira_cpf {
+            width: 132px;
+          }
+
+          .carteira_telefone { 
+            width: 237px;
+          }
+        }
+      }
+
+      .listagem_clientes_carteira {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin-top: 20px;
+
+        ul {
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          max-height: 232px;
+          overflow: auto;
+
+          .cliente_carteira {
+            display: flex;
+            background: none;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            padding-left: 20px;
+            height: 42px;
+            justify-content: start;
+            font-size: 0.94rem;
+            color: @secondary-gray;
+            align-items: center;
+            padding: 12px 0;
+
+            &:hover {
+              background: @secondary-color;
+              color: @white-color;
+            }
+
+            span {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              max-height: 25px;
+            }
+
+            .carteira_nome {
+              width: 329px;
+            }
+
+            .carteira_funcao {
+              width: 100px;
+            }
+
+            .carteira_cpf {
+              width: 132px;
+            }
+
+            .carteira_telefone { 
+              width: 237px;
+            }
+
+            .carteira_saldo {
+              color: black;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container_painel_financeiro_pdv{ 
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    height: 100%;
+    background: @white-color;
+    position: relative;
+
+
+    .painel_operacional {
+      padding: 30px 26px 0 26px;
+      display: flex;
+      flex-direction: column;
+
+      *{
+        text-transform: capitalize;
+      }
+
+      .container_total_consumo {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.56rem;
+        color: @primary-color;
+        letter-spacing: -2px;
+
+        .total_consumo {
+          font-size: 2.875rem;
+        }
+      }
+
+      .container_dinheiro_cartao {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .dinheiro_cartao {
+          display: flex;
+          flex-direction: column;
+          font-size: 1.125rem;
+          color: @secondary-gray;
+          font-weight: 600;
+          margin-bottom: 30px;
+
+          span {
+            font-weight: normal;
+            color: @primary-color;
+            margin-top: 5px;
+          }
+        }
+      }
+
+      .container_list_pgtparc {
+        display: flex; 
+        width: 100%;
+        margin-bottom: 30px;
+
+
+        ul {
+          padding: 0;
+          margin: 0;
+          display: flex;
+          width: 100%;
+          list-style: none;
+          flex-direction: column;
+          min-height: 145px;
+          max-height: 145px;
+          overflow: auto;
+
+          .pgt_parcial {
+            display: flex;
+            justify-content: space-between;
+            color: @primary-color;
+            font-size: 0.875rem;
+            align-items: center;
+
+            span {
+              font-size: 1rem;
+            }
+
+            button {
+              border: none;
+              background: none;
+              width: 25px;
+              height: 100%;
+              img {
+                width: 18px;
+              }
+            }
+          }
+        }
+      }
+
+      .container_resumo_consumo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1.125rem;
+        color: @secondary-gray;
+        letter-spacing: -0.5px;
+
+        .resumo_consumo {
+          display: flex;
+          justify-content: space-between;
+
+          span {
+            color: @primary-color;
+          }
+        }
+      }
+    }
+
+    .finalizar_painel_operacional {
+      display: flex;
+      width: 100%;
+      height: 100%;
+
+      .finaliza_caixa {
+        border: none;
+        background: @primary-color;
+        color: @white-color;
+        width: 100%;
+        height: 49px;
+        position: absolute;
+        bottom: 0px;
+      }
+      
+      .finaliza_caixa.off{
+        border: none;
+        background: @secondary-color;
+        color: @white-color;
+        width: 100%;
+        height: 49px;
+        position: absolute;
+        bottom: 0px;
+      }
+    }
+  }
+
+  .bg_container_add_produto {
+    display: flex;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    width: 100vw;
+    height: 89vh;
+    justify-content: center;
+    align-items: center;
+
+    .container_venda_por_peso {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: white;
+      padding: 40px 65px;
+      height: 250px;
+
+      .footer_venda_po_peso{
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        
+        span {
+          margin: 0 5px;
+        }
+
+        button {
+          width: 120px;
+        }
+      }
+    }
+  }
+
+  .bg_container_add_produto.hide {
+    display: none;
+  }
+
+/* DELIVERY */
+
+  .container_delivery {
+    * {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    margin: 10px 7.5px 10px 15px;
+
+
+    .step1_delivery {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 40px 65px;
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Graphik;
+      }
+
+      .container_lista_clientes {
+        display: flex;
+        flex-direction: column;
+        width: 509px;
+
+        .header_delivery {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+          
+          button {
+            width: 156px;
+          }
+        }
+    
+        form {
+          margin: 20px 0px;
+          .busca_cliente_btn {
+            display: none;
+          }
+        }
+
+        .header_clientes_delivery {
+          padding-left: 20px;
+          margin-bottom: 20px;
+
+          .delivery_nome {
+            width: 35.5%;
+          }
+
+          .delivery_funcao {
+            width: 31%;
+          }
+
+          .delivery_telefone {
+            width: 30%;
+          }
+        }
+
+        .list_clientes_delivery {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          color: @secondary-gray;
+          font-weight: 600;
+          font-size: 0.95rem;
+          list-style: none;
+          max-height: 280px;
+          height: 280px;
+          overflow: auto;
+
+          span {
+            display: flex;
+            width: 100%;
+          }
+
+          .delivery_nome {
+            width: 35.5%;
+          }
+
+          .delivery_funcao {
+            width: 31%;
+          }
+
+          .delivery_telefone {
+            width: 30%;
+          }
+
+          input {
+            background: none;
+            border: none;
+            outline: none;
+          }
+
+          button {
+            display: flex;
+            width: 100%;
+            padding: 10px 0;
+            font-size: 0.95rem;
+            padding-left: 20px;
+            border: none;
+            background: none;
+            outline: none;
+      
+            &:hover {
+              color: white;
+              background: @secondary-color;
+            }
+          }
+
+          .cliente.selecionado {
+            color: white;
+            background: @secondary-color;
+          }
+        }
+      }
+
+      .container_em_atendimento {
+        display: flex;
+        flex-direction: column;
+        width: 509px;
+
+        .header_delivery {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+          
+          button {
+            width: 30px;
+            background: none;
+            border: none;
+          }
+        }
+    
+        form {
+          margin: 20px 0px;
+          .busca_cliente_btn {
+            display: none;
+          }
+        }
+
+        .header_clientes_delivery {
+          padding-left: 20px;
+          margin-bottom: 20px;
+          .delivery_nome {
+            width: 35.5%;
+          }
+
+          .delivery_funcao {
+            width: 31%;
+          }
+
+          .delivery_telefone {
+            width: 30%;
+          }
+        }
+
+        .list_clientes_delivery {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          color: @secondary-gray;
+          font-weight: 600;
+          font-size: 0.95rem;
+          list-style: none;
+          max-height: 280px;
+          height: 280px;
+          overflow: auto;
+
+
+          span {
+            display: flex;
+            width: 100%;
+          }
+
+          .delivery_nome {
+            width: 35.5%;
+          }
+
+          .delivery_funcao {
+            width: 31%;
+          }
+
+          .delivery_telefone {
+            width: 30%;
+          }
+
+          button {
+            display: flex;
+            width: 100%;
+            padding: 10px 0;
+            font-size: 0.95rem;
+            padding-left: 20px;
+            border: none;
+            background: none;
+      
+            &:hover {
+              color: white;
+              background: @secondary-color;
+            }
+          }
+        }
+      }
+
+      .container_form_clientes_delivery {
+        display: flex; 
+        flex-direction: column;
+        width: 509px;
+
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        .header_delivery {
+          margin-bottom: 20px;
+        }
+
+        div {
+          display: flex;
+          width: 100%;
+          input {
+            margin-bottom: 20px;
+          }
+        }
+
+        .btn_form_delivery {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+
+          span {
+            margin: 0 5px;
+          }
+
+          button {
+            width: 320px;
+            margin-top: 20px;
+          }
+        }
+
+        select {
+          padding-left: 20px;
+        }
+      }
+
+      .container_lista_clientes.hide {
+        display: none;
+      }
+
+      .container_em_atendimento.hide {
+        display: none;
+      }
+    }
+
+    .step1_delivery.hide {
+      display: none;
+    }
+
+    .step2_delivery {
+      display: flex;
+      width: 100%;
+
+      .container_painel_operacional_pdv {
+        height: 100%;
+        .painel_operacional {
+          height: 100%;
+          .body_caixaoperacional {
+            height: 91%;
+            h5 {
+              span {
+                font-weight: normal;
+                text-transform: capitalize;
+              }
+            }
+          }
+        }
+      }
+
+      .paineldeprodutos_pdv {
+        height: 100%;
+
+        input {
+          padding-left: 20px;
+        }
+
+        form {
+          .btn_BuscaGeralProd {
+            display: none;
+          }
+        }
+      }
+
+      .container_painel_financeiro_pdv {
+        height: 100%;
+
+        .painel_operacional {
+          .container_list_pgtparc {
+            ul {
+              min-height: 120px;
+              max-height: 120px;
+            }
+          }
+        }
+
+        .finalizar_painel_operacional {
+
+          .finaliza_caixa {
+            bottom: 49px;
+          }
+
+          .finaliza_caixa2 {
+            border: none;
+            background: @warn-color;
+            color: @white-color;
+            width: 100%;
+            height: 49px;
+            position: absolute;
+            bottom: 0px;
+          }
+        }
+      }
+    }
+
+    .step2_delivery.hide {
+      display: none;
+    }
+  }
+
+  .container_pedidos_delivery {
+    * {
+      font-family: Graphik;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 65px;
+
+    .pedidos_delivery {
+      width: 47%;
+
+      .titulo_pedidos_em_preparo {
+        margin: 13px 0 30px 0;
+      }
+
+      .titulo_pedidos_delivery {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding-bottom: 20px;
+
+        .btn_geral {
+          width: 130px;
+          border-radius: 0px;
+        }
+      }
+
+      form {
+        button {
+          display: none;
+        }
+      }
+
+      .list_delivery_geral {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        max-height: 300px;
+        overflow: auto;
+        width: 100%;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        li{ 
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 20px;
+          width: 100%;
+
+          div {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            }
+
+          .dados_deliver {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            
+            .ver_consumo_delivery_btn {
+              flex: 1;
+
+              .show_consumo_delivery {
+                width: 35px;
+                height: 100%;
+                border-radius: 0px;
+                background: @secondary-color;
+                outline: none;
+                box-shadow: none;
+              }
+
+              .close_consumo_delivery {
+                width: 35px;
+                height: 100%;
+                border-radius: 0px;
+                background: @secondary-color;
+                outline: none;
+                box-shadow: none;
+              }
+
+              .show_consumo_delivery.hide {
+                display: none;
+              }
+
+              .close_consumo_delivery.hide {
+                display: none;
+              }
+            }
+
+            .container_descricao_delivery {
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+
+              .descricao_delivery {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex: 17;
+                align-items: center;
+                padding: 0 10px;
+                font-weight: 600;
+    
+                div {
+                  display: flex;
+                  flex-direction: column;
+                }
+
+                .descricao_1 {
+                  display: flex;
+                  flex: 2;
+
+                  .delivery_nome {
+                    font-size: 1.125rem;
+                    padding-bottom: 1px;
+                  }
+
+                  .delivery_horario {
+                    font-size: 0.875rem;
+                    color: @secondary-gray;
+
+                    span {
+                      margin-right: 10px;
+                    }
+                  }
+                }
+
+                .descricao_2 {
+                  display: flex;
+                  flex: 1;
+                  font-size: 0.875rem;
+                  color: @secondary-gray;
+                  
+                  .delivery_troco {
+                    padding-top: 3px;
+                  }
+
+                  span {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                  }
+                }
+              }
+            }
+
+            .container_entregador_delivery {
+              display: flex;
+              padding: 5px 10px;
+              align-items: center;
+              justify-content: space-between;
+
+              label {
+                font-size: 1rem;
+                color: @secondary-gray;
+                font-weight: 600;
+              }
+
+              select {
+                width: 285px;
+              }
+            }
+
+            .finaliza_devolve_delivery {
+              display: flex;
+              flex: 1;
+
+              button {
+                width: 57px;
+                border-radius: 0px;
+                height: 100%;
+              }
+
+              .entregue_delivery {
+                background: #27AE60;
+                font-weight: 600;
+                color: #9BDAB6;
+              }
+
+              .devolvido_delivery {
+                background: #AE3E27;
+                font-weight: 600;
+                color: #DAA69B;
+              }
+
+            }
+          }
+
+          .container_consumo_delivery {
+            display: flex;
+            width: 100%;
+
+            ul {
+              display: flex;
+              width: 100%;
+              background: @secondary-color;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: flex-start;
+              padding: 10px 45px;
+
+
+              li {
+                padding: 0;
+                button {
+                  display: flex;
+                  background: none;
+                  border: none; 
+                  outline: none;
+                  font-size: 0.750rem;
+                  padding-bottom: 5px;
+                  text-decoration: underline @white-color;
+                  
+                }
+
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                color: @white-color;
+                font-size: 0.875rem;
+                line-height: 25px;
+
+                .nome_pedido_delivery { 
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+
+          .container_consumo_delivery.hide {
+            display: none;
+          }
+        }
+      }
+
+      .head_table {
+
+        li {
+          width: 47px;
+        }
+        
+        button {
+          background: none;
+          border: none;
+          outline: none;
+        }
+      }
+
+      select {
+        font-size: 0.95rem;
+        padding-left: 20px;
+        color: @secondary-gray;
+        font-weight: 600;
+      }
+
+      .container_consumo_delivery {
+        li {
+          display: flex;
+          padding: 5px 0 5px 0;
+          font-size: 0.875rem;
+          justify-content: space-between;
+        }
+      }
+
+    }
+
+    .pedidos_delivery.hide {
+      display: none;
+    }
+  }
+
+  .bg_container_imprime_cupom.delivery {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+/* CADASTRO DE PRODUTOS */
+
+  .ant-form.ant-form-horizontal.container_form_produto_cadastro.hide {
+    display: none;
+  }
+
+  .ant-form.ant-form-horizontal.container_form_produto_cadastro {
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .h2_title {
+      margin-bottom: 20px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 40px 65px;
+
+    button {
+      position: absolute;
+      left: 18%;
+    }
+
+    .ant-form-item-control-input {
+      div {
+        .btn_novo_grupo {
+          position: absolute;
+          left: 0%;
+          min-height: 10px;
+          width: 120px;
+          border: 1px solid @primary-color;
+          outline: none;
+          color: @primary-color;
+
+          &:hover {
+            color: @white-color;
+            background: @primary-color;
+          }
+        }
+      }
+    }
+
+    input {
+      margin-bottom: 15px;
+    }
+
+    .ant-row.ant-form-item.label_checkbox {
+      div {
+        display: flex;
+
+        label {
+          font-size: 0.95rem;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+
+  .container_list_produto_cadastro {
+    * {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 40px 65px;
+
+    form {
+      display: flex;
+      width: 100%;
+      margin-bottom: 20px;
+
+
+      .btn_BuscaGeralProd {
+        display: none;
+      }
+    }
+
+    .header_list_produtos {
+      padding-left: 20px;
+      margin-bottom: 20px;
+
+
+      .produto_nome {
+        width: 180px;
+      }
+
+      .produto_grupo {
+        width: 75px;
+      }
+
+      .produto_estoque {
+        width: 78px;
+      }
+
+      .produto_preco {
+        width: 64px;
+      }
+    }
+
+    .list_produtos {
+      max-height: 72%;
+      min-height: 72%;
+      overflow: auto;
+
+      .produto_nome {
+        width: 190px;
+      }
+
+      .produto_grupo {
+        width: 88px;
+      }
+
+      .produto_estoque {
+        width: 63px;
+      }
+
+      .produto_preco {
+        width: 74px;
+      }
+    }
+  }
+
+  #container_form_grupo_cadastro {
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 40px 65px;
+
+    .btn_geral {
+      width: 120px;
+    }
+
+    .btn_novo_produto {
+      width: 120px;
+      border: 1px solid @primary-color;
+      outline: none;
+      color: @primary-color;
+      height: 29px;
+      font-size: 0.95rem;
+
+      &:hover {
+        color: @white-color;
+        background: @primary-color;
+      }
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      align-self: flex-start;
+    }
+
+    input {
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .head_grupos {
+      margin-bottom: 20px;
+      padding-left: 20px;
+
+      li {
+        padding-left: 0;
+      }
+    }
+
+    ul {
+      margin-bottom: 20px;
+      overflow: auto;
+
+      li {
+        padding: 5px 0;
+        padding-left: 20px;
+      }
+
+      .list_grupo_id {
+        width: 30%;
+      }
+
+      .list_grupo_grupo {
+        width: 56%;
+      }
+
+      .list_grupo_acoes{
+        width: 14%;
+        display: flex;
+      }
+    }
+
+  }
+
+/* CADASTRO DE CLIENTES */
+
+  .ant-form.ant-form-horizontal.container_form_cliente_cadastro {
+    display: flex;
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    h2 {
+      padding-bottom: 20px;
+    }
+  
+    padding: 40px 65px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    input {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .endereco_rua {
+      width: 380px;
+    }
+
+    .endereco_numero {
+      width: 100px;
+    }
+
+    .ant-form-item-control-input-content {
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn_geral {
+      width: 320px;
+      justify-self: center;
+      align-self: center;
+    }
+
+    .userpermission_form {
+      div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        justify-content: space-between;
+
+        label {
+          font-size: 0.875rem;
+          font-weight: 600;
+          color: @secondary-gray;
+        }
+
+        input {
+          width: 13px;
+          height: 13px;
+          margin: 0;
+          padding: 0;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  .container_list_cliente_cadastro {
+
+    .container_list_cliente {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      padding: 40px 65px;
+
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      form {
+        margin-bottom: 20px;
+
+        .btn_BuscaGeralCliente {
+          display: none;
+        }
+      }
+
+      .header_list_cliente {
+        padding-left: 20px;
+        margin-bottom: 20px;
+
+        .cliente_nome {
+          width: 163px;
+        }
+
+        .funcionario_nome {
+          width: 150px;
+        }
+
+        .cliente_funcao {
+          width: 95px;
+        }
+
+        .cliente_email {
+          width: 167px;
+        }
+
+        .cliente_telefone {
+          width: 130px;
+        }
+
+        .funcionario_create {
+          width: 20px;
+        }
+
+        .funcionario_list {
+          width: 20px;
+        }
+
+        .funcionario_update {
+          width: 20px;
+        }
+
+        .funcionario_delete {
+          width: 40px;
+        }
+      }
+
+      .list_clientes {
+        max-height: 300px;
+        overflow: auto;
+
+        .cliente_nome {
+          width: 163px;
+        }
+
+        .cliente_funcao {
+          width: 95px;
+        }
+
+        .cliente_email {
+          width: 235px;
+        }
+
+        .cliente_telefone {
+          width: 130px;
+          background: none;
+          border: none;
+          font-weight: 600;
+        }
+
+        li {
+          padding: 10px 0;
+          padding-left: 20px;
+
+          &:hover {
+            background: @secondary-color;
+          }
+        }
+      }
+
+      .list_funcionarios {
+        display: flex;
+        align-items: center;
+
+        li {
+          display: flex;
+          padding: 5px 0 5px 20px;
+          justify-content: center;
+          align-items: center;
+
+          .user_data {
+            display: flex;
+            width: 100%;
+            align-items: center;
+
+            .cliente_nome {
+              width: 150px;
+            }
+    
+            .cliente_email {
+              width: 170px;
+            }
+
+            .funcionario_create {
+              margin-right: 7px;
+            }
+    
+            .funcionario_list {
+              margin-right: 7px;
+            }
+    
+            .funcionario_update {
+              margin-right: 7px;
+            }
+    
+            .funcionario_delete {
+              margin-right: 18px;
+            }
+          }
+
+          .user_permission {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            div {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+
+        button {
+          width: 30px;
+        }
+      }
+    }
+
+    .container_list_cliente.hide {
+      display: none;
+    }
+
+    .container_financeiro_cliente.hide {
+      display: none;
+    }
+      
+    .container_financeiro_cliente {
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      padding: 40px 65px;
+
+      .container_btn_close_financeiro {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+
+        .btn_close_financeiro {
+          display: flex;
+          width: 28px;  
+          background: none;
+          border: none;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .container_header_financeiro {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        h4 {
+          font-size: 1.175rem;
+        }
+      }
+
+      .container_btn_add_financeiro {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        h4 {
+          span {
+            font-weight: normal;
+          }
+        }
+
+        button {
+          width: 120px;
+        }
+      }
+
+      .header_list_financeio {
+        padding-left: 20px;
+        margin-bottom: 20px;
+
+        .financeiro_data {
+          width: 187px;
+        }
+
+        .financeiro_pago {
+          width: 86px;
+        }
+
+        .financeiro_haver {
+          width: 94px;
+        }
+
+        .financeiro_saldo {
+          width: 66px;
+        }
+      }
+
+      .list_financeio {
+        max-height: 240px;
+        overflow: auto;
+
+        li {
+          padding: 10px 0px;
+
+          .financeiro_data {
+            width: 207px;
+          }
+  
+          .financeiro_pago {
+            width: 86px;
+          }
+  
+          .financeiro_haver {
+            width: 94px;
+          }
+  
+          .financeiro_saldo {
+            width: 80px;
+          }
+        }
+      }
+
+      .bg_add_credito_debito.hide {
+        display: none;
+      }
+
+
+      .bg_add_credito_debito {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0,0,0,0.1);
+
+        .add_credito_debito {
+          display: flex;
+          padding: 40px 69px;
+          width: 410px;
+          height: 254px;
+          background: @white-color;
+          flex-direction: column;
+          position: absolute;
+          top: 36%;
+          left: 38%;
+          border-radius: 5px;
+
+          .container_close_add_financeiro {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            margin-bottom: 40px;
+            justify-content: space-between;
+
+            .close_add_financeiro {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: none;
+              background: none;
+              width: 24px;
+            }
+          }
+
+          .container_add_credito_debito {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+
+            div {
+              display: flex;
+              width: 100%;
+
+              button {
+                width: 50%;
+              }
+            }
+          }
+
+          input {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+/* RELATORIO - ENTRADA - SAIDA - BALANCO   */
+
+  .container_relatorio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 40px 65px;
+
+    .header_relatorio {
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      h2 {
+        margin-right: 30px;
+      }
+
+      .h2_balanco {
+        margin-right: 28px;
+      }
+
+      label {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-right: 15px;
+      }
+
+      input { 
+        margin-right: 20px;
+      }
+
+      form { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      button {
+        width: 120px;
+        margin-right: 10px;
+      }
+    }
+
+    .header_list {
+      // ENTRADA //
+      .entrada_registro {
+        width: 25.6%;
+      }
+
+      .entrada_valor {
+        width: 31.3%;
+      }
+
+      .entrada_pgto {
+        width: 31.3%;
+      }
+
+      // SAIDA //
+
+      .saida_produto {
+        width: 51.7%;
+      }
+
+      .saida_qtd {
+        width: 36.7%;
+      }
+
+      // BALANÇO //
+
+      .balanco_produto {
+        width: 30%;
+      }
+
+      .balanco_qtd {
+        width: 21.3%;
+      }
+
+      .balanco_venda {
+        width: 18%;
+      }
+
+      .balanco_custo {
+        width: 24%;
+      }
+
+    }
+
+    .list_relatorio {
+      max-height: 57%;
+      min-height: 57%;
+      overflow: auto;
+      margin-bottom: 30px;
+
+      // ENTRADA //
+
+      .entrada_registro {
+        width: 25.6%;
+      }
+
+      .entrada_valor {
+        width: 31.3%;
+      }
+
+      .entrada_pgto {
+        width: 31.3%;
+      }
+
+      // SAIDA //
+
+      .saida_produto {
+        width: 52.5%;
+      }
+
+      .saida_qtd {
+        width: 36.7%;
+      }
+
+      // BALANÇO //
+
+      .balanco_produto {
+        width: 31%;
+      }
+
+      .balanco_qtd {
+        width: 21.3%;
+      }
+
+      .balanco_venda {
+        width: 18%;
+      }
+
+      .balanco_custo {
+        width: 24%;
+      }
+    }
+  }
+
+/* CUPONS */
+
+.cupom_geral {
+  *{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: Graphik;
+    list-style: none;
+  }
+  padding: 40px 65px;
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  background: white;
+
+  .local_cupom {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+
+    h3 {
+      font-weight: 600;
+      font-size: 1.125rem;
+    }
+  }
+
+  .subtitulo_cupom {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+
+    h3 {
+      font-weight: 600;
+      font-size: 0.875rem;
+      padding: 2.5px 0;
+    }
+  }
+
+  .titulo_cupom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+    font-weight: 600;
+  }
+
+  .data_cupom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0;
+
+  }
+
+  .list_consumo_cupom {
+    display: flex; 
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 0;
+
+    ul li {
+      display: flex;
+      // width: 100%;
+
+      .cupom_descricao {
+        width: 65%;
+      }
+
+      .cupom_quantidade {
+        width: 25%;
+      }
+
+      .cupom_valor {
+        display: flex;
+        width: 10%;
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+
+      .entrada_registro {
+        width: 42%;
+      }
+
+      .entrada_valor {
+        width: 18%;
+      }
+
+      .entrada_pgto {
+        width: 21%;
+      }
+
+      .entrada_soma {
+        width: 17%;
+      }
+
+      .saida_produto {
+        width: 50%;
+      }
+
+      .saida_qtd {
+        width: 25%;
+      }
+
+      .saida_total {
+        width: 15%;
+      }
+
+    }
+    .listagem_consumo_cupom {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        padding: 5px 0px;
+      }
+    }
+
+    .listagem_consumo_cupom.entrada {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      li {
+        padding: 5px 0px;
+
+        span {
+          text-transform: capitalize;
+          font-size: 0.750rem;
+        }
+      }
+    }
+
+    .listagem_consumo_cupom.saida {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      li {
+        padding: 5px 0px;
+      }
+    }
+
+    .listagem_consumo_cupom.pedido_delivery {
+      li {
+        .cupom_nome_pedido_delivery {
+          width: 60%;
+        }
+
+        .cupom_quantidade_pedido_delivery {
+          width: 28%;
+        }
+      }
+    }
+
+    ul {
+      display: flex;
+      width: 100%;
+      font-weight: 600;
+      margin: 10px 0 5px 0;
+
+      .cupom_descricao {
+        width: 60%;
+      }
+
+      .cupom_quantidade {
+        width: 28%;
+      }
+
+      .cupom_valor {
+        width: 10%;
+      }
+
+      .entrada_registro {
+        width: 42%;
+      }
+
+      .entrada_valor {
+        width: 18%;
+      }
+
+      .entrada_pgto {
+        width: 21%;
+      }
+
+      .entrada_soma {
+        width: 17%;
+      }
+
+      .saida_produto {
+        width: 50%;
+      }
+
+      .saida_qtd {
+        width: 25%;
+      }
+
+      .saida_total {
+        width: 15%;
+      }
+
+    }
+
+    h3 {
+      font-weight: 600;
+    }
+
+    .total_consumo_cupom {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px; 
+    }
+  }
+
+  .list_consumo_cupom.saida {
+    ul {
+      .balanco_produto {
+        width: 32%;
+      }
+
+      .balanco_qtd {
+        width: 11%;
+      }
+
+      .balanco_venda {
+        width: 22%;
+      }
+
+      .balanco_custo {
+        width: 20%;
+      }
+    }
+  }
+  
+  .relatorio_pagamentos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+
+      input {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background: none;
+        border: none;
+        width: 125px;
+      }
+    }
+  }
+
+  .observacoes_cupom {
+    display: flex;
+    height: 4rem;
+    padding: 10px 0;
+
+    h3 {
+      font-weight: 600;
+    }
+  }
+
+  .footer_cupom {
+    display: flex; 
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+
+    h3 {
+      font-weight:600;
+    }
+  }
+
+  .footer_cupom_entrada {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.750rem;
+    font-weight: normal;
+  }
+
+  .line {
+    &::after {
+      display: flex;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: black;
+    }
+  }
+}
+
+.cupom_geral.hide {
+  display: none;
+}
+
+.bg_container_imprime_cupom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 93vw;
+  height: 83vh;
+  position: absolute;
+  background: rgba(0,0,0,0.1);
+
+  .container_imprime_cupom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 65px;
+    width: 32em;
+    max-width: 100%;
+    height: 45%;
+    background: @white-color;
+    border-radius: 5px;
+    z-index: 999;
+
+    .header_imprime_cupom {
+      margin-bottom: 15px;
+    }
+
+    .body_imprime_cupom {
+      h3 {
+        font-size: 1.375rem;
+      }
+      margin-bottom: 30px;
+    }
+
+    .footer_imprime_cupom {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      button {
+        width: 120px;
+        text-transform: capitalize;
+      }
+      span {
+        margin: 0 5px;
+      }
+
+      .btn_finaliza_cupom {
+        margin-top: 40px;
+        width: 100%;
+        background: #28a745;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .container_imprime_cupom.hide {
+    display: none;
+  }
+
+  .container_cupom {
+    display: flex;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.bg_container_imprime_cupom.hide {
+  display: none;
+}
+
+.bg_container_imprime_cupom.entrada {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+// USER PAGE //
+
+.container_user_options {
+  * {
+    padding: 0;
+    margin: 0;
+    list-style: 0;
+    font-family: Graphik;
+  }
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 45px 60px;
+  
+  h2 {
+    padding-bottom: 20px;
+  }
+
+  .body_user_options {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+
+    label {
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+
+    input {
+      background: none;
+      margin-bottom: 30px;
+      height: 30px;
+    }
+  }
+}
+

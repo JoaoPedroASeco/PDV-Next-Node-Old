@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="856.274" height="779.262" viewBox="0 0 856.274 779.262">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.088" y1="-0.185" x2="1.08" y2="1.172" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fefefe"/>
+      <stop offset="0.529" stop-color="#fefefe"/>
+      <stop offset="1" stop-color="#fefefe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-0.1" y1="0.014" x2="1.099" y2="0.996" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="-0.279" y1="0.024" x2="1.266" y2="0.975" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Camada_x0020_1" transform="translate(-0.001)">
+    <g id="_700535424" transform="translate(0 0)">
+      <g id="Grupo_220" data-name="Grupo 220" transform="matrix(1, 0.002, -0.002, 1, 0.004, 620.877)">
+        <text id="P" transform="translate(0 1)" fill="#fefefe" font-size="1" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">P</tspan></text>
+        <text id="r" transform="translate(142.946 1)" fill="#fefefe" font-size="1" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">r</tspan></text>
+        <text id="i" transform="translate(232.841 1)" fill="#fefefe" font-size="1" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">i</tspan></text>
+        <text id="m" transform="translate(296.273 1)" fill="#fefefe" font-size="1" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">m</tspan></text>
+        <text id="o" transform="translate(514.553 1)" fill="#fefefe" font-size="1" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">o</tspan></text>
+        <text id="r-2" data-name="r" transform="translate(663.956 1)" fill="#fefefe" font-size="1" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">r</tspan></text>
+        <text id="a" transform="translate(753.851 1)" fill="#fefefe" font-size="1" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">a</tspan></text>
+      </g>
+      <g id="Grupo_221" data-name="Grupo 221" transform="translate(460.235 777.261)">
+        <text id="S" transform="translate(0 1)" fill="#fefefe" font-size="1" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">S</tspan></text>
+        <text id="o-2" data-name="o" transform="translate(59.635 1)" fill="#fefefe" font-size="1" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">o</tspan></text>
+        <text id="l" transform="translate(125.22 1)" fill="#fefefe" font-size="1" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">l</tspan></text>
+        <text id="u" transform="translate(153.834 1)" fill="#fefefe" font-size="1" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">u</tspan></text>
+        <text id="t" transform="translate(217.267 1)" fill="#fefefe" font-size="1" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">t</tspan></text>
+        <text id="i-2" data-name="i" transform="translate(256.264 1)" fill="#fefefe" font-size="1" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">i</tspan></text>
+        <text id="o-3" data-name="o" transform="translate(284.878 1)" fill="#fefefe" font-size="1" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">o</tspan></text>
+        <text id="n" transform="translate(350.464 1)" fill="#fefefe" font-size="1" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">n</tspan></text>
+      </g>
+      <g id="Grupo_222" data-name="Grupo 222" transform="translate(216.449)">
+        <path id="Caminho_145" data-name="Caminho 145" d="M4840.223,3100.853l.633-.253c1.646-.506-.887.126.633-.126l4.178-.253c6.2-.253,7.217,1.013,6.331-5.191-.253-2.152-.127-4.431-.253-6.584-2.532-50.645,24.563-101.164,64.193-129.525,7.47-5.317,15.32-10.889,24.183-15.067,20.892-9.623,38.617-15.573,62.674-16.586,11.015-.506,25.575-.38,35.958,2.279,5.444,1.393,9.749,1.773,15.574,3.8,4.938,1.773,9.369,3.166,14.181,5.191,20.384,8.736,41.148,24.436,55.962,41.276,2.786,3.292,5.951,7.47,8.736,10.889a124.872,124.872,0,0,1,8.1,11.522c2.659,4.052,4.685,8.1,7.217,12.535,4.812,8.61,8.1,17.6,11.648,27.728.633,1.9,1.772,5.571,2.786,6.964a5.74,5.74,0,0,0,6.837,1.646c5.7-2.532,2.153-9.369.506-14.18-2.532-7.47-1.393-5.951-5.064-14.687-1.646-4.052-4.431-9.37-6.457-13.168-13.8-24.943-30.767-46.087-54.317-63.053-14.687-10.509-32.413-20.258-52.291-25.323a152,152,0,0,0-15.827-3.418c-5.95-.76-11.4-1.266-17.472-1.646-11.142-.633-26.462.253-36.971,2.406-5.7,1.14-10.635,2.153-16.333,3.672a154.529,154.529,0,0,0-28.487,10.889,176.65,176.65,0,0,0-24.563,14.56c-1.9,1.266-3.672,2.659-5.571,4.052-3.292,2.532-12.661,11.142-15.573,13.927a120.794,120.794,0,0,0-9.75,10,164.412,164.412,0,0,0-36.464,70.017c-1.52,6.457-3.8,18.739-4.052,24.816-.127,2.912-.253,6.457-.507,9.5s-.126,6.078-.253,9.37a64.135,64.135,0,0,1-7.344,1.013c-3.925.253-15.826,3.8-19.5,5.318-18.612,7.723-34.186,19.878-44.187,37.6a95.858,95.858,0,0,0-5.318,10.889c-3.292,9.5-4.685,12.788-5.57,22.79-.633,7.47-1.646,10.636-.254,18.739a35.761,35.761,0,0,1,.254,3.8,22.578,22.578,0,0,1,.633,3.545,20.134,20.134,0,0,0,.633,3.545c.253,1.773.507,1.773.76,3.418,1.52,7.47,6.331,17.093,10.129,22.917,7.977,12.155,22.031,24.183,35.958,29.248a86.227,86.227,0,0,0,26.715,5.571c5.7.38,9.875-.253,15.7-.38l48.62-.76c86.983-1.646,173.459-2.406,260.442-4.3,49-1.013,97.618-1.519,146.491-2.406,5.064-.127,11.269-.507,16.207-.127l27.981-.126c1.393-.126,1.772-.633,3.292-.76,21.9-1.9,39-19.5,43.681-38.11,7.977-31.906-14.307-59-44.314-66.978-11.142-2.912-18.612-2.152-30.133-2.026-7.724.127-8.483,5.191-6.838,8.1,2.279,3.925,8.23,2.786,13.421,2.786,11.143-.126,18.739.886,27.6,4.558,11.015,4.558,20.638,12.788,25.956,22.917,10.889,20.511.886,44.947-18.232,53.937-11.269,5.318-15.573,3.672-28.741,3.925-43.175,1.013-86.856,1.393-129.9,2.152l-64.952,1.14c-21.9.38-42.922.38-64.952.76-21.777.38-43.555.886-65.332,1.266-21.651.38-43.048.38-64.7.76l-97.872,1.9c-10.762.253-21.018.76-30.134-2.279-25.069-8.356-40.389-25.576-46.34-51.658-3.8-16.839.38-38.743,9.243-53.051,2.279-3.671,7.217-10.762,10.382-13.927,1.393-1.393,3.039-2.659,4.3-3.925,8.23-7.977,20.512-14.434,31.907-17.346,2.912-.76,11.648-2.785,14.56-2.153Z" transform="translate(-4757.479 -2915.419)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+        <path id="Caminho_146" data-name="Caminho 146" d="M8147.313,3364.989c-11.648.253-21.018,2.785-31.653,5.318-3.545.886-6.2,1.9-9.5,2.786-6.457,1.772-4.685,1.646-8.989,3.292-3.166,1.266-6.078,2.279-5.571,6.584.38,3.292,2.912,5.191,6.964,4.685,4.685-.633,3.545-1.266,9.116-3.166,11.269-3.672,29.88-8.23,41.149-8.23a98.075,98.075,0,0,1,39.5,8.61,107.518,107.518,0,0,1,22.536,13.8,68.832,68.832,0,0,1,6.205,5.951c6.584,6.331,6.33,5.824,11.648,12.661a102.773,102.773,0,0,1,9.5,14.94c7.976,15.827,11.521,31.78,11.015,50.392-.127,4.3-.633,7.6,2.405,9.5a5.435,5.435,0,0,0,8.1-2.659c.633-1.772,1.013-8.736,1.013-10.889a122.975,122.975,0,0,0-3.292-28.235,95.341,95.341,0,0,0-7.6-20.385c-17.22-37.224-57.229-65.965-102.43-65.079Z" transform="translate(-7669.41 -3307.94)" fill-rule="evenodd" fill="url(#linear-gradient-2)"/>
+        <path id="Caminho_147" data-name="Caminho 147" d="M5411,4292.661l11.4-.38a3.914,3.914,0,0,0,1.139-2.405,33.409,33.409,0,0,0-.253-3.545c-.126-1.519.633-5.571-.759-6.331a57.3,57.3,0,0,0,.253,6.584c.886,6.331-.126,5.064-6.331,5.191l-4.178.253c-1.519.253,1.013-.38-.633.126l-.633.253Z" transform="translate(-5328.256 -4107.227)" fill-rule="evenodd" fill="url(#linear-gradient-3)"/>
+      </g>
+    </g>
+  </g>
+</svg>
